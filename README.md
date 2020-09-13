@@ -1,2 +1,2 @@
 # codes
-Here you can find the codes that I've wrote while learning Python.
+Here you can find the codes that I wrote while learning Python.
