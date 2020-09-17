@@ -12,7 +12,7 @@ def is_prime(n):
         if n % test == 0:
             factors += 1
         test += 1
-    return factors == 0  # return True only if there is no factor for the number.
+    return factors == 0  # return True only if the number has no factors.
 
 
 if __name__ == "__main__":
