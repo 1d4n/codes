@@ -45,4 +45,4 @@ if __name__ == '__main__':  # Checking if the code is running from the current f
             print("starting with zero:", fib_0(number))
             print("starting with one:", fib_1(number), "\n")
         else:
-            print("Error: You must enter a positive number\n")
+            print("Error: You must enter a positive number!\n")
