@@ -18,7 +18,7 @@ def is_prime(n):
 if __name__ == "__main__":
 
     while True:
-        number = input("Please enter a number to check whether it's a prime number (enter -1 to stop): \n")
+        number = input("Please enter a number to check if it's a prime number (enter -1 to stop): \n")
         if number.isdigit():
             if is_prime(int(number)):
                 print("The number", number, "is prime.\n")
