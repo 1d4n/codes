@@ -4,7 +4,7 @@ __author__ = '1d4n'
 def fib_0(n):
     """This functions returns a list which contains the first n numbers in the fibonacci sequence, starting with 0.
     Args:
-        n = an positive integer.
+        n = a positive integer.
     """
     if n.isdigit():
         if int(n) < 1:
@@ -21,7 +21,7 @@ def fib_0(n):
 def fib_1(n):
     """This functions returns a list which contains the first n numbers in the fibonacci sequence, starting with 1.
     Args:
-        n = an positive integer.
+        n = a positive integer.
     """
     if n.isdigit():
         if int(n) < 1:
