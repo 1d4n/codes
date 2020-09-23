@@ -1,4 +1,4 @@
-__author__ = '__1d4n__'
+__author__ = '1d4n'
 
 
 def is_prime(n):
