@@ -4,7 +4,7 @@ __author__ = '1d4n'
 def is_prime(n):
     """ Checks if an integer is a prime number
     Args:
-        n = an integer
+        an integer
     """
     factors = 0
     test = 2
