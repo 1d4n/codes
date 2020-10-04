@@ -20,7 +20,7 @@ def caesar_enc(msg, shift=1):
                 enc += char
         return enc
     else:
-        raise Exception("Can't encrypt non-string message")
+        raise Exception("Can't encrypt a non-string message")
 
 
 def caesar_dec(msg, shift=1):
@@ -42,7 +42,7 @@ def caesar_dec(msg, shift=1):
                 dec += char
         return dec
     else:
-        raise Exception("Can't decrypt non-string message")
+        raise Exception("Can't decrypt a non-string message")
 
 
 if __name__ == '__main__':
