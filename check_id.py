@@ -23,8 +23,9 @@ def get_check_digit(num: str):
     return 10 - digits_sum if digits_sum % 10 else digits_sum
 
 
-def is_valid_id(num: str) -> bool:
-    return sum([sum(map(int, str(int(num[i]) * (i % 2 + 1)))) for i in range(len(num))]) % 10 == 0 and len(num) == 9
+def is_valid_id(num) -> bool:
+    # return sum([sum(map(int, str(int(num[i]) * (i % 2 + 1)))) for i in range(len(num))]) % 10 == 0 and len(num) == 9
+    return sum([(int(d) * (i % 2 + 1) - 9) if (int(d) * (i % 2 + 1) > 9) else (int(d) * (i % 2 + 1)) for i, d in enumerate(f"{'0' * (9 - len(str(id_num)))}{id_num}")]) % 10 == 0
 
 
 if __name__ == '__main__':
