@@ -1,30 +1,24 @@
 __author__ = '1d4n'
 
 
-def is_prime(n):
-    """ Checks if an integer is a prime number
-    Args:
-        an integer
-    """
+def is_prime(num):
     factors = 0
-    test = 2
-    while test * test <= n:
-        if n % test == 0:
+    tester = 2
+    while tester ** 2 <= num:
+        if num % tester == 0:
             factors += 1
-        test += 1
+        tester += 1
     return factors == 0  # return True only if the number has no factors.
 
 
-if __name__ == "__main__":
-
+# Checking if the code is running from the current file (and not being imported from another file):
+if __name__ == '__main__':
     while True:
-        number = input("Please enter a number to check if it's a prime number (enter -1 to close): \n")
-        if number.isdigit():
-            if is_prime(int(number)):
-                print("The number", number, "is prime.\n")
-            else:
-                print("The number", number, "is not prime.\n")
+        number = input("Please insert a number to check if it's a prime number (enter -1 to close): \n")
+        if not number.isdigit():
+            break
+        if is_prime(int(number)):
+            print("The number", number, "is prime.\n")
         else:
-            if int(number) == -1:
-                break
-            print("Error: You can only enter a number!\n")
+            print("The number", number, "is not prime.\n")
+
