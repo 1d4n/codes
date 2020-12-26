@@ -4,9 +4,9 @@ def fact(n):
         return 1
     return n*fact(n-1)
 
-def binom(n, k):
+def choose(n, k):
     if isinstance(n, int) and isinstance(k, int) and n >= k >= 0:
-        return int(fact(n) / (fact(k) * fact(n-k)))
+        return int(fact(n) / (fact(k) * fact(n-k)))  # nCr
     return 0
 
 def solutions(n,m):
@@ -16,7 +16,7 @@ def solutions(n,m):
 	return: the number of natural solutions for: x_1 + x_2 +... x_n = m
 	"""
 	a = n -1 + m
-	return binom(a, m)
+	return choose(a, m)
 
 if __name__ == "__main__":
 
