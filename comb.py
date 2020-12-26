@@ -15,7 +15,7 @@ def solutions(n,m):
     :return: the number of natural solutions for: x_1 + x_2 +...+ x_n = m
     """
     if n < 1 or m < 0:
-        return "number of elements must be at least 1 and equals to a non-negative value."
+        return "Number of elements has to be at least 1 and all elements can't be equal to a negative value."
     a = n -1 + m
     return choose(a, m)
 
