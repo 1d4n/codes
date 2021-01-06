@@ -45,8 +45,7 @@ def caesar_dec(msg, shift=1):
 
 
 if __name__ == '__main__':
-    txt = input("Enter the text that you want to ecrypt / decrypt: ")
+    txt = input("Enter the message that you want to encrypt / decrypt: ")
     encrypted = caesar_enc(txt, 3)
-    decrypted = caesar_dec(encrypted, 3)
     print('Encrypted text:', encrypted)
-    print('Decrypted text:', decrypted)
+    print('Decrypted text:', caesar_dec(encrypted, 3))
