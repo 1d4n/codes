@@ -8,10 +8,9 @@ def fibonacci():
         yield a
 
 
-# Checking if the code is running from the current file (and not being imported from another file):
 if __name__ == '__main__':
     while True:
-        num = input("\nHow many numbers of the fibonacci sequence to you want to see? (0 to stop)\n")
+        num = input("\nHow many numbers of the fibonacci sequence do you want to see? (0 to stop)\n")
         if num == '0' or not num.isdigit():
             break
         fib_generator = fibonacci()
